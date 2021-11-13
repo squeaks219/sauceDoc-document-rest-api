@@ -44,7 +44,6 @@ public class Document {
     @NonNull
     private LocalDateTime date = LocalDateTime.now();
     private Ratings ratings;
-    @NonNull
     @Builder.Default
     private String[] attachments = null;
 

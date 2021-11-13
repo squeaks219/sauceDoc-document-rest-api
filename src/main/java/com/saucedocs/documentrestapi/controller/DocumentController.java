@@ -54,6 +54,34 @@ public class DocumentController {
 
         document.setTitle(documentDetails.getTitle());
 
+        document.setImages(documentDetails.getImages());
+
+        document.setTeacher(documentDetails.getTeacher());
+
+        document.setSchool(documentDetails.getSchool());
+
+        document.setDescription(documentDetails.getDescription());
+
+        document.setAuthor(documentDetails.getAuthor());
+
+        document.setGrade(documentDetails.getGrade());
+
+        document.setTags(documentDetails.getTags());
+
+        document.setAp(documentDetails.getAp());
+
+        document.setThumbnail(documentDetails.getThumbnail());
+
+        document.setSubject(documentDetails.getSubject());
+
+        document.setViews(documentDetails.getViews());
+
+        document.setDate(documentDetails.getDate());
+
+        document.setRatings(documentDetails.getRatings());
+
+        document.setAttachments(documentDetails.getAttachments());
+
         final Document updateDocument = documentRepo.save(document);
         return ResponseEntity.ok(updateDocument);
     }
